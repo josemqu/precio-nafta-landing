@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Tab } from '@headlessui/react'
 import { DevicePhoneMobileIcon, ComputerDesktopIcon } from '@heroicons/react/24/outline'
+import ScrollReveal from './ScrollReveal'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -44,7 +45,7 @@ export default function Screenshots() {
   return (
     <div id="screenshots" className="bg-gray-50 dark:bg-brand-secondary py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
+        <ScrollReveal className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
             Disponible en todas las plataformas
           </h2>
@@ -52,9 +53,9 @@ export default function Screenshots() {
             Accede a Precio Nafta desde tu dispositivo favorito. La misma experiencia optimizada 
             para móvil, tablet y escritorio.
           </p>
-        </div>
+        </ScrollReveal>
 
-        <div className="mt-16">
+        <ScrollReveal delay={200} className="mt-16">
           <Tab.Group>
             <Tab.List className="flex justify-center space-x-1 rounded-xl bg-brand-accent/20 dark:bg-brand-tertiary p-1 max-w-md mx-auto">
               <Tab
@@ -131,10 +132,10 @@ export default function Screenshots() {
               </Tab.Panel>
             </Tab.Panels>
           </Tab.Group>
-        </div>
+        </ScrollReveal>
 
         {/* Platform availability */}
-        <div className="mt-16 text-center">
+        <ScrollReveal delay={400} className="mt-16 text-center">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-8">
             Funciona perfectamente en todos tus dispositivos
           </h3>
@@ -144,7 +145,7 @@ export default function Screenshots() {
             <div className="text-4xl">🖥️</div>
             <div className="text-4xl">⌚</div>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </div>
   )

@@ -4,6 +4,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon, MapPinIcon, CurrencyDollarIcon, ClockIcon } from '@heroicons/react/24/outline'
 import DarkModeToggle from './DarkModeToggle'
+import ScrollReveal from './ScrollReveal'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -72,57 +73,69 @@ export default function Hero() {
       <div className="relative">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
-              <span className="block">Encuentra el mejor</span>
-              <span className="block text-brand-accent">precio de combustible</span>
-            </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-300 sm:text-xl">
-              La app más completa para encontrar los mejores precios de nafta y gasoil cerca de ti. 
-              Ahorra dinero en cada carga de combustible.
-            </p>
+            <ScrollReveal>
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
+                <span className="block">Encuentra el mejor</span>
+                <span className="block text-brand-accent">precio de combustible</span>
+              </h1>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-300 sm:text-xl">
+                La app más completa para encontrar los mejores precios de nafta y gasoil cerca de ti. 
+                Ahorra dinero en cada carga de combustible.
+              </p>
+            </ScrollReveal>
             
             {/* Key Benefits */}
             <div className="mx-auto mt-10 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-3">
-              <div className="flex flex-col items-center">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-100">
-                  <MapPinIcon className="h-6 w-6 text-brand-accent" aria-hidden="true" />
+              <ScrollReveal delay={300}>
+                <div className="flex flex-col items-center">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-100">
+                    <MapPinIcon className="h-6 w-6 text-brand-accent" aria-hidden="true" />
+                  </div>
+                  <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">Cerca de ti</h3>
+                  <p className="mt-2 text-sm text-gray-600 dark:text-gray-300 text-center">
+                    Encuentra estaciones de servicio cercanas con precios actualizados
+                  </p>
                 </div>
-                <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">Cerca de ti</h3>
-                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300 text-center">
-                  Encuentra estaciones de servicio cercanas con precios actualizados
-                </p>
-              </div>
+              </ScrollReveal>
               
-              <div className="flex flex-col items-center">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-100">
-                  <CurrencyDollarIcon className="h-6 w-6 text-brand-accent" aria-hidden="true" />
+              <ScrollReveal delay={400}>
+                <div className="flex flex-col items-center">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-100">
+                    <CurrencyDollarIcon className="h-6 w-6 text-brand-accent" aria-hidden="true" />
+                  </div>
+                  <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">Mejores precios</h3>
+                  <p className="mt-2 text-sm text-gray-600 dark:text-gray-300 text-center">
+                    Compara precios y ahorra dinero en cada carga de combustible
+                  </p>
                 </div>
-                <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">Mejores precios</h3>
-                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300 text-center">
-                  Compara precios y ahorra dinero en cada carga de combustible
-                </p>
-              </div>
+              </ScrollReveal>
               
-              <div className="flex flex-col items-center">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-orange-100">
-                  <ClockIcon className="h-6 w-6 text-orange-600" aria-hidden="true" />
+              <ScrollReveal delay={500}>
+                <div className="flex flex-col items-center">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-orange-100">
+                    <ClockIcon className="h-6 w-6 text-orange-600" aria-hidden="true" />
+                  </div>
+                  <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">Siempre actualizado</h3>
+                  <p className="mt-2 text-sm text-gray-600 dark:text-gray-300 text-center">
+                    Precios actualizados en tiempo real por la comunidad
+                  </p>
                 </div>
-                <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">Siempre actualizado</h3>
-                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300 text-center">
-                  Precios actualizados en tiempo real por la comunidad
-                </p>
-              </div>
+              </ScrollReveal>
             </div>
 
             {/* CTA Buttons */}
-            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <a href="https://www.precionafta.com" className="btn-primary text-lg px-8 py-4">
-                Usar Web App
-              </a>
-              <a href="#download" className="btn-secondary text-lg px-8 py-4">
-                Descargar App
-              </a>
-            </div>
+            <ScrollReveal delay={600}>
+              <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                <a href="https://www.precionafta.com" className="btn-primary text-lg px-8 py-4">
+                  Usar Web App
+                </a>
+                <a href="#download" className="btn-secondary text-lg px-8 py-4">
+                  Descargar App
+                </a>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
 
