@@ -90,13 +90,13 @@ export default function Features() {
               <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-white sm:text-4xl">
-                    50K+
+                    500+
                   </div>
                   <div className="mt-2 text-gray-300">Usuarios activos</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-white sm:text-4xl">
-                    10K+
+                    5000+
                   </div>
                   <div className="mt-2 text-gray-300">
                     Estaciones registradas

@@ -68,6 +68,8 @@ export default function Download() {
               >
                 <a
                   href={option.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block p-6 bg-gray-50 dark:bg-brand-secondary rounded-2xl hover:bg-white dark:hover:bg-brand-tertiary hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-200 dark:hover:border-brand-accent/20"
                 >
                   <div className="flex items-center justify-between mb-4">
@@ -168,12 +170,12 @@ export default function Download() {
             >
               Probar Web App
             </a>
-            <a href="#" className="btn-secondary text-lg px-8 py-4">
+            <a href="#download" className="btn-secondary text-lg px-8 py-4">
               Ver en tiendas
             </a>
           </div>
           <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-            Disponible para iOS, Android y Web • Más de 50,000 usuarios activos
+            Disponible para Android y Web
           </p>
         </ScrollReveal>
       </div>
