@@ -130,7 +130,8 @@ export default function Hero() {
             </ScrollReveal>
             <ScrollReveal delay={200}>
               <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-300 sm:text-xl">
-                La app más completa para encontrar los mejores precios de nafta, gasoil y GNC cerca tuyo. Ahorrá plata en cada carga.
+                La app más completa para encontrar los mejores precios de nafta,
+                gasoil y GNC cerca tuyo. Ahorrá plata en cada carga.
               </p>
             </ScrollReveal>
 
@@ -138,15 +139,18 @@ export default function Hero() {
             <div className="mx-auto mt-10 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-3">
               <ScrollReveal delay={300}>
                 <div className="flex flex-col items-center">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-100">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-green-100">
                     <MapPinIcon
-                      className="h-6 w-6 text-brand-accent"
+                      className="h-6 w-6 text-green-600"
                       aria-hidden="true"
                     />
                   </div>
-                  <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">Cerca tuyo</h3>
+                  <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">
+                    Cerca tuyo
+                  </h3>
                   <p className="mt-2 text-sm text-gray-600 dark:text-gray-300 text-center">
-                    Encontrá estaciones de servicio cerca tuyo con precios actualizados
+                    Encontrá estaciones de servicio cerca tuyo con precios
+                    actualizados
                   </p>
                 </div>
               </ScrollReveal>
@@ -159,7 +163,9 @@ export default function Hero() {
                       aria-hidden="true"
                     />
                   </div>
-                  <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">Mejores precios</h3>
+                  <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">
+                    Mejores precios
+                  </h3>
                   <p className="mt-2 text-sm text-gray-600 dark:text-gray-300 text-center">
                     Compará precios y ahorrá plata en cada carga
                   </p>
@@ -174,9 +180,12 @@ export default function Hero() {
                       aria-hidden="true"
                     />
                   </div>
-                  <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">Siempre actualizado</h3>
+                  <h3 className="mt-4 text-lg font-medium text-gray-900 dark:text-white">
+                    Siempre actualizado
+                  </h3>
                   <p className="mt-2 text-sm text-gray-600 dark:text-gray-300 text-center">
-                    Precios actualizados al toque según la información provista por las estaciones de servicio
+                    Precios actualizados al toque según la información provista
+                    por las estaciones de servicio
                   </p>
                 </div>
               </ScrollReveal>

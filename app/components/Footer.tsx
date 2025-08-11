@@ -91,7 +91,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Precio Nafta. Todos los derechos reservados.
+              © 2023 Precio Nafta. Todos los derechos reservados.
             </p>
             <div className="flex space-x-6 mt-4 sm:mt-0">
               <span className="text-gray-400 text-sm">
