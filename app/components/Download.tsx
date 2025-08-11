@@ -21,14 +21,17 @@ const downloadOptions = [
     color: "bg-brand-accent hover:bg-primary-600",
     available: true,
     badge: "🤖",
+    storeBadge: "/images/badges/google-play-badge.svg",
   },
   {
     name: "App Store",
     description: "Bajate para iPhone y iPad",
-    url: "#",
+    url: "https://apps.apple.com/us/app/precio-nafta/id6749783431",
     icon: ArrowDownTrayIcon,
-    color: "bg-brand-primary hover:bg-brand-secondary",
+    color: "bg-brand-accent hover:bg-primary-600",
     badge: "🍎",
+    available: true,
+    storeBadge: "/images/badges/app-store-badge.svg",
   },
 ];
 
@@ -81,9 +84,23 @@ export default function Download() {
                         aria-hidden="true"
                       />
                     </div>
-                    {option.badge && (
+                    {option.storeBadge ? (
+                      <div className="flex items-center justify-center h-10 w-28 sm:h-12 sm:w-32">
+                        <Image
+                          src={option.storeBadge}
+                          alt={`Descargar en ${option.name}`}
+                          width={128}
+                          height={48}
+                          className="h-auto w-full max-h-10 sm:max-h-12 object-contain transition-transform duration-200 group-hover:scale-105 filter drop-shadow-sm"
+                          priority={option.name === "Google Play" || option.name === "App Store"}
+                          quality={95}
+                          loading="eager"
+                          sizes="(max-width: 640px) 112px, 128px"
+                        />
+                      </div>
+                    ) : option.badge ? (
                       <span className="text-2xl">{option.badge}</span>
-                    )}
+                    ) : null}
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                     {option.name}
