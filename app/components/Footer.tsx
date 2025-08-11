@@ -95,7 +95,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm">
               © 2023 Precio Nafta. Todos los derechos reservados.
             </p>
-            <div className="flex space-x-6 mt-4 sm:mt-0">
+            <div className="flex space-x-6 mt-4 sm:mt-0 mr-12">
               <span className="text-gray-400 text-sm">
                 Hecho con ❤️ en Argentina
               </span>
