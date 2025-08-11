@@ -114,7 +114,7 @@ export default function Hero() {
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <div className="text-center">
             <ScrollReveal>
-              <div className="flex justify-center mb-8">
+              <div className="flex justify-center align-middle mb-8 space-x-4">
                 <Image
                   src="/images/icons/pump_128.png"
                   alt="Precio Nafta App Icon"
@@ -122,6 +122,9 @@ export default function Hero() {
                   height={128}
                   className="w-24 h-24 rounded-lg"
                 />
+                <h1 className="flex items-center text-4xl text-center font-bold text-gray-900 dark:text-gray-300">
+                  Precio Nafta
+                </h1>
               </div>
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
                 <span className="block">Encontrá el mejor</span>
