@@ -122,7 +122,7 @@ export default function Hero() {
                   height={128}
                   className="w-24 h-24 rounded-lg"
                 />
-                <h1 className="flex items-center text-4xl text-center font-bold text-gray-900 dark:text-gray-300">
+                <h1 className="flex items-center text-4xl text-center font-bold text-gray-500 dark:text-gray-300">
                   Precio Nafta
                 </h1>
               </div>
