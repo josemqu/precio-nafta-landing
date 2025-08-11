@@ -61,7 +61,7 @@ export default function Hero() {
                       href="#download"
                       className="text-brand-gray hover:text-brand-accent dark:text-gray-300 dark:hover:text-brand-accent px-3 py-2 text-sm font-medium transition-colors"
                     >
-                      Bajate la App
+                      Descargar
                     </a>
                     <DarkModeToggle />
                   </div>
@@ -98,7 +98,7 @@ export default function Hero() {
                   href="#download"
                   className="text-gray-600 hover:text-brand-accent dark:text-gray-300 dark:hover:text-brand-accent block px-3 py-2 text-base font-medium"
                 >
-                  Bajate la App
+                  Descargar
                 </a>
               </div>
             </Disclosure.Panel>
@@ -203,7 +203,7 @@ export default function Hero() {
                   Usar Web App
                 </a>
                 <a href="#download" className="btn-secondary text-lg px-8 py-4">
-                  Bajate la App
+                  Descargar
                 </a>
               </div>
             </ScrollReveal>
