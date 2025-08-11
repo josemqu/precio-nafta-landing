@@ -197,6 +197,8 @@ export default function Hero() {
                 <a
                   href="https://www.precionafta.com"
                   className="btn-primary text-lg px-8 py-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Usar Web App
                 </a>
