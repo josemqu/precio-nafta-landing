@@ -39,7 +39,7 @@ export default function Hero() {
                       className="w-10 h-10 rounded-md"
                     />
                     <h1 className="text-2xl font-bold text-brand-accent">
-                      Precio Nafta
+                      <a href="/">Precio Nafta</a>
                     </h1>
                   </div>
                 </div>
