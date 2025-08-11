@@ -29,6 +29,7 @@ Una landing page moderna y estética para la app Precio Nafta, construida con Ne
 ## 🎨 Diseño
 
 El diseño está inspirado en la estética limpia y moderna de BuenBit, con:
+
 - Gradientes sutiles y colores profesionales
 - Tipografía clara y legible (Inter)
 - Espaciado generoso y elementos bien organizados
@@ -46,11 +47,13 @@ El diseño está inspirado en la estética limpia y moderna de BuenBit, con:
 ## 🚀 Instalación y uso
 
 1. Instalar dependencias:
+
 ```bash
 npm install
 ```
 
 2. Ejecutar en modo desarrollo:
+
 ```bash
 npm run dev
 ```
@@ -58,6 +61,7 @@ npm run dev
 3. Abrir [http://localhost:3000](http://localhost:3000) en tu navegador
 
 4. Para producción:
+
 ```bash
 npm run build
 npm start
@@ -90,11 +94,3 @@ Para personalizar el contenido:
 2. **Contenido**: Edita los componentes en `app/components/`
 3. **Imágenes**: Reemplaza las URLs de Unsplash con capturas reales
 4. **Enlaces**: Actualiza las URLs en los componentes Download y Footer
-
-## 🎯 Próximos pasos
-
-- [ ] Agregar capturas de pantalla reales de la app
-- [ ] Configurar enlaces reales de App Store y Google Play
-- [ ] Implementar analytics
-- [ ] Optimizar SEO
-- [ ] Agregar testimonios de usuarios
