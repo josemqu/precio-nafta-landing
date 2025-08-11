@@ -49,7 +49,7 @@ export default function Footer() {
                   href="#download"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Bajate la App
+                  Descargas
                 </a>
               </li>
             </ul>
@@ -61,23 +61,15 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#"
+                  href="https://www.precionafta.com/suggestions"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Centro de ayuda
+                  Sugerencias
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Contacto
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                  href="https://www.precionafta.com/privacy-policy"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Privacidad
@@ -85,7 +77,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.precionafta.com/terms-and-conditions"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Términos
