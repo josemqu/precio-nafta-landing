@@ -18,6 +18,8 @@ export default function Footer() {
               <a
                 href="https://www.precionafta.com"
                 className="text-brand-accent hover:text-primary-300 font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 www.precionafta.com
               </a>
