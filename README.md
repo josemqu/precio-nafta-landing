@@ -35,6 +35,14 @@ El diseño está inspirado en la estética limpia y moderna de BuenBit, con:
 - Animaciones suaves y transiciones
 - Enfoque en la experiencia del usuario
 
+## 🎨 Paleta de colores (branding)
+
+- Primary Dark: #0f162a
+- Secondary Dark: #1d283b
+- Tertiary Dark: #2d3447
+- Accent Blue: #05b6d4
+- Light Gray: #8b8b8b
+
 ## 🚀 Instalación y uso
 
 1. Instalar dependencias:
@@ -54,6 +62,13 @@ npm run dev
 npm run build
 npm start
 ```
+
+## 🧰 Scripts disponibles
+
+- dev: Inicia el servidor de desarrollo (Next.js)
+- build: Genera el build de producción
+- start: Inicia el servidor en modo producción
+- lint: Ejecuta ESLint
 
 ## 📊 Estadísticas mostradas
 

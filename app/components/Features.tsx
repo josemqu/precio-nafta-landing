@@ -85,9 +85,9 @@ export default function Features() {
           <div className="bg-gradient-to-r from-brand-secondary to-brand-primary rounded-3xl px-6 py-12 sm:px-12">
             <div className="text-center">
               <h3 className="text-2xl font-bold text-white sm:text-3xl">
-                Sumate a miles de usuarios que ya ahorran
+                Sumate a la lista de usuarios que ya ahorran
               </h3>
-              <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
+              <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-white sm:text-4xl">
                     500+
@@ -100,14 +100,6 @@ export default function Features() {
                   </div>
                   <div className="mt-2 text-gray-300">
                     Estaciones registradas
-                  </div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-white sm:text-4xl">
-                    $500K+
-                  </div>
-                  <div className="mt-2 text-gray-300">
-                    Ahorrados por los usuarios
                   </div>
                 </div>
               </div>
