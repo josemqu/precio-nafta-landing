@@ -24,10 +24,17 @@ export default function RootLayout({
         <meta name="keywords" content={metadata.keywords} />
         <meta name="author" content="Precio Nafta" />
         <meta name="robots" content="index, follow" />
+        <meta name="color-scheme" content="dark light" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/images/icons/pump_512.png" />
+        {/* Prevent theme flash: set 'dark' class ASAP based on saved preference or system */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(() => { try { const ls = localStorage.getItem('darkMode'); const isDark = ls === 'true' || (ls === null && window.matchMedia('(prefers-color-scheme: dark)').matches); const c = document.documentElement.classList; isDark ? c.add('dark') : c.remove('dark'); } catch(e){} })();`,
+          }}
+        />
       </head>
-      <body className={inter.className}>
+      <body className={inter.className} style={{ backgroundColor: '#0f162a' }}>
         {children}
         <BackToTop />
       </body>

@@ -44,7 +44,7 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="hidden md:block">
-                  <div className="ml-10 flex items-baseline space-x-4">
+                  <div className="ml-10 flex items-center space-x-4">
                     <a
                       href="#features"
                       className="text-brand-gray hover:text-brand-accent dark:text-gray-300 dark:hover:text-brand-accent px-3 py-2 text-sm font-medium transition-colors"
