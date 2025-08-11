@@ -21,7 +21,10 @@ export default function Hero() {
   return (
     <div className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-primary-50 dark:from-brand-primary dark:via-brand-secondary dark:to-brand-tertiary">
       {/* Navigation */}
-      <Disclosure as="nav" className="relative z-10">
+      <Disclosure
+        as="nav"
+        className="fixed top-0 inset-x-0 z-50 bg-white/80 dark:bg-brand-secondary/80 backdrop-blur border-b border-gray-100 dark:border-brand-tertiary"
+      >
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -77,8 +80,8 @@ export default function Hero() {
               </div>
             </div>
 
-            <Disclosure.Panel className="md:hidden">
-              <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3 bg-white dark:bg-brand-secondary border-t dark:border-brand-tertiary">
+            <Disclosure.Panel className="md:hidden absolute top-16 inset-x-0 z-40">
+              <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3 bg-white dark:bg-brand-secondary border-t dark:border-brand-tertiary shadow-lg">
                 <a
                   href="#features"
                   className="text-gray-600 hover:text-brand-accent dark:text-gray-300 dark:hover:text-brand-accent block px-3 py-2 text-base font-medium"
@@ -102,6 +105,9 @@ export default function Hero() {
           </>
         )}
       </Disclosure>
+
+      {/* Spacer to offset fixed nav height */}
+      <div aria-hidden className="h-16" />
 
       {/* Hero Content */}
       <div className="relative">

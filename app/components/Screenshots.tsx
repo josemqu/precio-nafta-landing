@@ -18,19 +18,19 @@ const screenshots = {
     {
       name: "Mapa de estaciones",
       description: "Encontrá estaciones cerca tuyo con precios actualizados",
-      image: "/images/screenshots/mobile/mapa-estaciones.png",
+      image: "/images/screenshots/mobile/01.png",
       fallback: "/images/screenshots/mobile/01.png",
     },
     {
       name: "Lista de precios",
       description: "Compará precios de diferentes combustibles",
-      image: "/images/screenshots/mobile/lista-precios.png",
+      image: "/images/screenshots/mobile/02.png",
       fallback: "/images/screenshots/mobile/02.png",
     },
     {
       name: "Perfil del usuario",
       description: "Gestioná tu perfil y preferencias",
-      image: "/images/screenshots/mobile/perfil-estadisticas.png",
+      image: "/images/screenshots/mobile/03.png",
       fallback: "/images/screenshots/mobile/03.png",
     },
   ],
@@ -38,13 +38,13 @@ const screenshots = {
     {
       name: "Dashboard principal",
       description: "Vista completa del mapa y precios en pantalla grande",
-      image: "/images/screenshots/web/dashboard-principal.png",
+      image: "/images/screenshots/web/01.png",
       fallback: "/images/screenshots/web/01.png",
     },
     {
       name: "Análisis detallado",
       description: "Vista de análisis de precios y tendencias",
-      image: "/images/screenshots/web/analisis-detallado.png",
+      image: "/images/screenshots/web/02.png",
       fallback: "/images/screenshots/web/02.png",
     },
   ],
