@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 export default function Footer() {
   return (
@@ -9,8 +9,10 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold text-white mb-4">Precio Nafta</h3>
             <p className="text-gray-300 max-w-md">
-              La app más completa para encontrar los mejores precios de combustible en Argentina. 
-              Ahorra dinero en cada carga y únete a nuestra comunidad.
+              La app más completa para encontrar los mejores precios de
+              combustible en Argentina. Ahorrá plata en cada carga. Enviá
+              sugerencias y reportá errores para que verifiquemos los precios
+              los informan las estaciones.
             </p>
             <div className="mt-6">
               <a
@@ -27,18 +29,27 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Producto</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#features" className="text-gray-300 hover:text-white transition-colors">
-                  Características
+                <a
+                  href="#features"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Funciones
                 </a>
               </li>
               <li>
-                <a href="#screenshots" className="text-gray-300 hover:text-white transition-colors">
+                <a
+                  href="#screenshots"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Capturas
                 </a>
               </li>
               <li>
-                <a href="#download" className="text-gray-300 hover:text-white transition-colors">
-                  Descargar
+                <a
+                  href="#download"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Bajate la App
                 </a>
               </li>
             </ul>
@@ -49,22 +60,34 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Soporte</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Centro de ayuda
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Contacto
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Privacidad
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Términos
                 </a>
               </li>
@@ -87,5 +110,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

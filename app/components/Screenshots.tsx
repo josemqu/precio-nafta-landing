@@ -1,57 +1,69 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { Tab } from '@headlessui/react'
-import { DevicePhoneMobileIcon, ComputerDesktopIcon } from '@heroicons/react/24/outline'
-import ScrollReveal from './ScrollReveal'
+import { useState } from "react";
+import { Tab } from "@headlessui/react";
+import {
+  DevicePhoneMobileIcon,
+  ComputerDesktopIcon,
+} from "@heroicons/react/24/outline";
+import ScrollReveal from "./ScrollReveal";
+import SmartImage from "./SmartImage";
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 const screenshots = {
   mobile: [
     {
-      name: 'Mapa de estaciones',
-      description: 'Encuentra estaciones cercanas con precios actualizados',
-      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+      name: "Mapa de estaciones",
+      description: "Encontrá estaciones cerca tuyo con precios actualizados",
+      image: "/images/screenshots/mobile/mapa-estaciones.png",
+      fallback: "/images/screenshots/mobile/01.png",
     },
     {
-      name: 'Lista de precios',
-      description: 'Compara precios de diferentes combustibles',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+      name: "Lista de precios",
+      description: "Compará precios de diferentes combustibles",
+      image: "/images/screenshots/mobile/lista-precios.png",
+      fallback: "/images/screenshots/mobile/02.png",
     },
     {
-      name: 'Perfil y estadísticas',
-      description: 'Lleva un registro de tus ahorros',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
-    }
+      name: "Perfil del usuario",
+      description: "Gestioná tu perfil y preferencias",
+      image: "/images/screenshots/mobile/perfil-estadisticas.png",
+      fallback: "/images/screenshots/mobile/03.png",
+    },
   ],
   web: [
     {
-      name: 'Dashboard principal',
-      description: 'Vista completa del mapa y precios en pantalla grande',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80'
+      name: "Dashboard principal",
+      description: "Vista completa del mapa y precios en pantalla grande",
+      image: "/images/screenshots/web/dashboard-principal.png",
+      fallback: "/images/screenshots/web/01.png",
     },
     {
-      name: 'Análisis detallado',
-      description: 'Estadísticas avanzadas y tendencias de precios',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80'
-    }
-  ]
-}
+      name: "Análisis detallado",
+      description: "Vista de análisis de precios y tendencias",
+      image: "/images/screenshots/web/analisis-detallado.png",
+      fallback: "/images/screenshots/web/02.png",
+    },
+  ],
+};
 
 export default function Screenshots() {
   return (
-    <div id="screenshots" className="bg-gray-50 dark:bg-brand-secondary py-16 sm:py-24">
+    <div
+      id="screenshots"
+      className="bg-gray-50 dark:bg-brand-secondary py-16 sm:py-24"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollReveal className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-            Disponible en todas las plataformas
+            Capturas de pantalla
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
-            Accede a Precio Nafta desde tu dispositivo favorito. La misma experiencia optimizada 
-            para móvil, tablet y escritorio.
+            Accedé a Precio Nafta desde tu dispositivo favorito. La misma
+            experiencia optimizada para móvil, tablet y escritorio.
           </p>
         </ScrollReveal>
 
@@ -61,11 +73,11 @@ export default function Screenshots() {
               <Tab
                 className={({ selected }) =>
                   classNames(
-                    'w-full rounded-lg py-2.5 text-sm font-medium leading-5',
-                    'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                    "w-full rounded-lg py-2.5 text-sm font-medium leading-5",
+                    "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
                     selected
-                      ? 'bg-white text-blue-700 shadow'
-                      : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
+                      ? "bg-white text-blue-700 shadow"
+                      : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
                   )
                 }
               >
@@ -77,11 +89,11 @@ export default function Screenshots() {
               <Tab
                 className={({ selected }) =>
                   classNames(
-                    'w-full rounded-lg py-2.5 text-sm font-medium leading-5',
-                    'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                    "w-full rounded-lg py-2.5 text-sm font-medium leading-5",
+                    "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
                     selected
-                      ? 'bg-white text-blue-700 shadow'
-                      : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
+                      ? "bg-white text-blue-700 shadow"
+                      : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
                   )
                 }
               >
@@ -96,16 +108,23 @@ export default function Screenshots() {
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                   {screenshots.mobile.map((screenshot, index) => (
                     <div key={index} className="group relative">
-                      <div className="aspect-[9/16] w-full overflow-hidden rounded-2xl bg-gray-200 group-hover:opacity-75 transition-opacity">
-                        <img
+                      <div className="aspect-[9/19.5] w-full overflow-hidden rounded-2xl bg-gray-200 group-hover:opacity-75 transition-opacity">
+                        <SmartImage
                           src={screenshot.image}
+                          fallback={screenshot.fallback}
                           alt={screenshot.name}
                           className="h-full w-full object-cover object-center"
+                          width={375}
+                          height={812}
                         />
                       </div>
                       <div className="mt-4 text-center">
-                        <h3 className="text-lg font-medium text-gray-900">{screenshot.name}</h3>
-                        <p className="mt-2 text-sm text-gray-600">{screenshot.description}</p>
+                        <h3 className="text-lg font-medium text-gray-900">
+                          {screenshot.name}
+                        </h3>
+                        <p className="mt-2 text-sm text-gray-600">
+                          {screenshot.description}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -115,16 +134,23 @@ export default function Screenshots() {
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
                   {screenshots.web.map((screenshot, index) => (
                     <div key={index} className="group relative">
-                      <div className="aspect-[16/10] w-full overflow-hidden rounded-2xl bg-gray-200 group-hover:opacity-75 transition-opacity">
-                        <img
+                      <div className="aspect-[80/57] w-full overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75 transition-opacity">
+                        <SmartImage
                           src={screenshot.image}
+                          fallback={screenshot.fallback}
                           alt={screenshot.name}
                           className="h-full w-full object-cover object-center"
+                          width={2400}
+                          height={1710}
                         />
                       </div>
                       <div className="mt-4 text-center">
-                        <h3 className="text-lg font-medium text-gray-900">{screenshot.name}</h3>
-                        <p className="mt-2 text-sm text-gray-600">{screenshot.description}</p>
+                        <h3 className="text-lg font-medium text-gray-900">
+                          {screenshot.name}
+                        </h3>
+                        <p className="mt-2 text-sm text-gray-600">
+                          {screenshot.description}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -137,16 +163,15 @@ export default function Screenshots() {
         {/* Platform availability */}
         <ScrollReveal delay={400} className="mt-16 text-center">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-8">
-            Funciona perfectamente en todos tus dispositivos
+            Funciona bárbaro en todos tus dispositivos
           </h3>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
             <div className="text-4xl">📱</div>
             <div className="text-4xl">💻</div>
             <div className="text-4xl">🖥️</div>
-            <div className="text-4xl">⌚</div>
           </div>
         </ScrollReveal>
       </div>
     </div>
-  )
+  );
 }
