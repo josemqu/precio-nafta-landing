@@ -28,8 +28,8 @@ const screenshots = {
       fallback: "/images/screenshots/mobile/02.png",
     },
     {
-      name: "Perfil del usuario",
-      description: "Gestioná tu perfil y preferencias",
+      name: "Preferencias de usuario",
+      description: "Guardá tus estaciones favoritas",
       image: "/images/screenshots/mobile/03.png",
       fallback: "/images/screenshots/mobile/03.png",
     },
