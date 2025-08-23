@@ -32,7 +32,7 @@ export default function Hero() {
                 <div className="flex items-center">
                   <div className="flex-shrink-0 flex items-center space-x-3">
                     <Image
-                      src="/images/icons/pump_64.png"
+                      src="/images/icons/pump_128.png"
                       alt="Precio Nafta"
                       width={40}
                       height={40}
@@ -116,7 +116,7 @@ export default function Hero() {
             <ScrollReveal>
               <div className="flex justify-center align-middle mb-8 space-x-4">
                 <Image
-                  src="/images/icons/pump_128.png"
+                  src="/images/icons/pump_512.png"
                   alt="Precio Nafta App Icon"
                   width={128}
                   height={128}
