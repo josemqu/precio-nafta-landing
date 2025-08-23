@@ -82,23 +82,25 @@ export default function Features() {
 
         {/* Stats Section */}
         <ScrollReveal delay={200} className="mt-20">
-          <div className="bg-gradient-to-r from-brand-secondary to-brand-primary rounded-3xl px-6 py-12 sm:px-12">
+          <div className="rounded-3xl px-6 py-12 sm:px-12 bg-gradient-to-r from-gray-50 to-primary-50 dark:from-brand-secondary dark:to-brand-tertiary  ring-1 ring-gray-200/60 dark:ring-0">
             <div className="text-center">
-              <h3 className="text-2xl font-bold text-white sm:text-3xl">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">
                 Sumate a la lista de usuarios que ya ahorran
               </h3>
               <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-white sm:text-4xl">
+                  <div className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
                     1000+
                   </div>
-                  <div className="mt-2 text-gray-300">Usuarios activos</div>
+                  <div className="mt-2 text-gray-600 dark:text-gray-300">
+                    Usuarios activos
+                  </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-white sm:text-4xl">
+                  <div className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
                     5000+
                   </div>
-                  <div className="mt-2 text-gray-300">
+                  <div className="mt-2 text-gray-600 dark:text-gray-300">
                     Estaciones registradas
                   </div>
                 </div>
