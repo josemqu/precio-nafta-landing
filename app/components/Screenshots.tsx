@@ -76,8 +76,8 @@ export default function Screenshots() {
                     "w-full rounded-lg py-2.5 text-sm font-medium leading-5",
                     "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
                     selected
-                      ? "bg-white text-blue-700 shadow"
-                      : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                      ? "bg-white text-blue-700 shadow dark:bg-white dark:text-blue-700"
+                      : "text-blue-600 hover:bg-white/50 hover:text-blue-700 dark:text-blue-200 dark:hover:bg-white/10 dark:hover:text-white"
                   )
                 }
               >
@@ -92,8 +92,8 @@ export default function Screenshots() {
                     "w-full rounded-lg py-2.5 text-sm font-medium leading-5",
                     "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
                     selected
-                      ? "bg-white text-blue-700 shadow"
-                      : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                      ? "bg-white text-blue-700 shadow dark:bg-white dark:text-blue-700"
+                      : "text-blue-600 hover:bg-white/50 hover:text-blue-700 dark:text-blue-200 dark:hover:bg-white/10 dark:hover:text-white"
                   )
                 }
               >
@@ -104,11 +104,11 @@ export default function Screenshots() {
               </Tab>
             </Tab.List>
             <Tab.Panels className="mt-8">
-              <Tab.Panel className="rounded-xl bg-white p-3">
+              <Tab.Panel className="rounded-xl bg-white dark:bg-gray-800 p-3">
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                   {screenshots.mobile.map((screenshot, index) => (
                     <div key={index} className="group relative">
-                      <div className="aspect-[9/19.5] w-full overflow-hidden rounded-2xl bg-gray-200 group-hover:opacity-75 transition-opacity">
+                      <div className="aspect-[9/19.5] w-full overflow-hidden rounded-2xl bg-gray-200 dark:bg-gray-700 group-hover:opacity-75 transition-opacity">
                         <SmartImage
                           src={screenshot.image}
                           fallback={screenshot.fallback}
@@ -119,10 +119,10 @@ export default function Screenshots() {
                         />
                       </div>
                       <div className="mt-4 text-center">
-                        <h3 className="text-lg font-medium text-gray-900">
+                        <h3 className="text-lg font-medium text-gray-900 dark:text-white">
                           {screenshot.name}
                         </h3>
-                        <p className="mt-2 text-sm text-gray-600">
+                        <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
                           {screenshot.description}
                         </p>
                       </div>
@@ -130,11 +130,11 @@ export default function Screenshots() {
                   ))}
                 </div>
               </Tab.Panel>
-              <Tab.Panel className="rounded-xl bg-white p-3">
+              <Tab.Panel className="rounded-xl bg-white dark:bg-gray-800 p-3">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
                   {screenshots.web.map((screenshot, index) => (
                     <div key={index} className="group relative">
-                      <div className="aspect-[80/57] w-full overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75 transition-opacity">
+                      <div className="aspect-[80/57] w-full overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-700 group-hover:opacity-75 transition-opacity">
                         <SmartImage
                           src={screenshot.image}
                           fallback={screenshot.fallback}
@@ -145,10 +145,10 @@ export default function Screenshots() {
                         />
                       </div>
                       <div className="mt-4 text-center">
-                        <h3 className="text-lg font-medium text-gray-900">
+                        <h3 className="text-lg font-medium text-gray-900 dark:text-white">
                           {screenshot.name}
                         </h3>
-                        <p className="mt-2 text-sm text-gray-600">
+                        <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
                           {screenshot.description}
                         </p>
                       </div>
