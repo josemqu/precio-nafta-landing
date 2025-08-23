@@ -111,7 +111,7 @@ export default function Hero() {
 
       {/* Hero Content */}
       <div className="relative">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
           <div className="text-center">
             <ScrollReveal>
               <div className="flex justify-center align-middle mb-8 space-x-4">
