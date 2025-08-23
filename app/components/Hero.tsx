@@ -128,7 +128,9 @@ export default function Hero() {
               </div>
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
                 <span className="block">Encontrá el mejor</span>
-                <span className="block text-brand-accent">precio de nafta</span>
+                <span className="block text-brand-accent">
+                  precio de combustible
+                </span>
               </h1>
             </ScrollReveal>
             <ScrollReveal delay={200}>
